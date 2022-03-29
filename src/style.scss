@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$darkAccent: #3d224b;
+$lightAccent: #6d2cda;
+$backgroundBase: #695cab;
+
+* {
+  box-sizing: border-box;
+  height: 100%;
+  border: 5px solid red;
+}
+
+body {
+  font-family: 'Tourney', cursive;
+  font-size: 4rem;
+  font-weight: 300px;
+  color: #212529;
+  text-align: center;
+  background: lighten($backgroundBase, 20%);
+  margin: 10px 0;
+  height: 100%;
+}
+
+#machine {
+  height: 100%;
+  border: 5px solid yellow;
+}
+
+#drum-machine {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#display {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  text-shadow: violet 2px 3px 3px;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 36px;
+  color: #eeff00;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: darken($lightAccent, 38%);
+}
+
+#pad-elements {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 350px;
+  max-height: 350px;
+  border: 2px solid grey;
+  border-radius: 6px;
+  margin: 10px;
+  background: lighten($backgroundBase, 35%);
+  padding: 5px;
+}
+
+#pad-elements .drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  color: #eeff00;
+  width: 100px;
+  height: 100px;
+  background: darken($backgroundBase, 35%);
+  padding: 10px 10px;
+  margin: 5px 5px;
+  border: 2px solid darken($backgroundBase, 38%);
+  border-radius: 8px;
+  box-shadow: #240f4a 3px 3px 5px;
+}
